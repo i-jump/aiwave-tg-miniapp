@@ -1,0 +1,40 @@
+html,
+body {
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden; /* 禁用全局滚动 */
+}
+.miniapp-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  position: relative;
+  background-color: #000;
+  padding-bottom: 83px;
+  .miniapp-main {
+    height: 300px;
+    background: green;
+    margin: 10px 0;
+  }
+  .miniapp-footer {
+    width: 100%;
+    position: fixed;
+    height: 83px;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    background: var(
+      --Materials-Regular--Dark,
+      linear-gradient(0deg, #8c8c8c 0%, #8c8c8c 100%),
+      rgba(37, 37, 37, 0.82)
+    );
+    background-blend-mode: overlay, normal;
+
+    /* Material Blur/Material Blur - Dark */
+    box-shadow: 0.5px 0px 0px 0px #38383a, -0.5px 0px 0px 0px #38383a,
+      0px -0.5px 0px 0px #38383a, 0px 0.5px 0px 0px #38383a;
+    backdrop-filter: blur(50px);
+  }
+}

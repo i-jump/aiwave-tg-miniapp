@@ -1,0 +1,217 @@
+.miniapp-avatar {
+  display: flex;
+  padding-top: 32px;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  .avatar-wrap {
+    width: 338px;
+    height: 260px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    overflow: hidden;
+    position: relative;
+    border-radius: 41.25px;
+    box-shadow: 0px 1px 0px 1px #00d0ff;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .avatar-giveme {
+      width: 75px;
+      height: 75px;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      background: url("https://static.wdabuliu.com/3b859788-d768-41a1-b5a2-b9524b7855081731572773834.png")
+        no-repeat center center / 100% 100%;
+      &:active {
+        background-image: url("https://static.wdabuliu.com/fcb4e539-5e8a-4c1d-a291-deb8c1aa5aae1731572773837.png");
+      }
+    }
+    .avatar-giveme-time {
+      width: 75px;
+      height: 75px;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url("https://static.wdabuliu.com/4e957272-df30-4a2b-aac3-072a7001d9221731573094251.png")
+        no-repeat center center / 100% 100%;
+    }
+  }
+  .miniapp-link-list {
+    display: flex;
+    padding: 8px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    .total-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      align-self: stretch;
+      background-color: #212121;
+      border-radius: 16px;
+      .total-user-wrap {
+        display: flex;
+        padding: 12px;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        .user-head {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+        }
+        .user-desc {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+        }
+        .user-desc-name {
+          color: var(--7700-a-1, #fff);
+          font-family: "SF Pro";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 22px; /* 137.5% */
+          letter-spacing: -0.4px;
+        }
+        .user-desc-text {
+          color: var(--SpaceU, var(--Color-brand2, #00f0ff));
+          font-family: "SF Pro";
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px; /* 166.667% */
+          letter-spacing: -0.23px;
+        }
+      }
+      .total-coin-wrap {
+        display: flex;
+        padding: 12px;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        align-self: stretch;
+        border-top: 1px #323232 solid;
+        .coin-img {
+          display: flex;
+          height: 34px;
+          align-items: center;
+        }
+        .coin-num {
+          color: #ffcb47;
+          font-family: "SF Pro";
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 22px; /* 68.75% */
+          letter-spacing: -0.4px;
+        }
+      }
+    }
+    .miniapp-card-list {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      .miniaoo-card-item {
+        display: flex;
+        padding: 12px;
+        align-items: center;
+        align-self: stretch;
+        border-radius: 16px;
+        background: #212121;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex: 0 0 calc(50% - 5px);
+        gap: 6px;
+        .card-title {
+          color: #ffffff;
+          font-family: "SF Pro";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 22px; /* 137.5% */
+          letter-spacing: -0.4px;
+        }
+        .card-desc {
+          color: #707070;
+          font-family: "SF Pro";
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: -0.23px;
+        }
+        .coin-item {
+          display: flex;
+          width: 75.5px;
+          padding: 6px;
+          justify-content: center;
+          align-items: center;
+          gap: 3px;
+          img {
+            display: flex;
+            height: 17px;
+            justify-content: center;
+            align-items: center;
+          }
+          .coin-num {
+            color: #ffcb47;
+            font-family: "SF Pro";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 11px; /* 68.75% */
+            letter-spacing: -0.2px;
+          }
+        }
+        .coin-btn {
+          display: flex;
+          padding: 8px 14px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          border-radius: 12px;
+          border: 1px solid #454545;
+          color: var(--Color-brand2, #00f0ff);
+          font-family: "SF Pro";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 20px; /* 142.857% */
+          letter-spacing: -0.23px;
+          img {
+            width: 20px;
+            height: 20px;
+          }
+          &:active {
+            color: #212121;
+            border: 1px solid var(--Color-brand2, #00f0ff);
+            background: var(--Color-brand2, #00f0ff);
+          }
+        }
+        .coin-btn-ed {
+          color: #454545;
+        }
+      }
+    }
+  }
+
+  // 预加载图片 preload-images
+  .preload-images {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-image: url("https://static.wdabuliu.com/fcb4e539-5e8a-4c1d-a291-deb8c1aa5aae1731572773837.png");
+  }
+}

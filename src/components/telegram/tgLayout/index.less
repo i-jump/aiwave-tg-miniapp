@@ -1,0 +1,26 @@
+html,
+body {
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden; /* 禁用全局滚动 */
+}
+.tg-layout-mobile {
+  height: auto;
+  background: #fff;
+
+  > .tg-container {
+    height: calc(100vh - 83px);
+    overflow: auto;
+  }
+  .miniapp-footer {
+    width: 100%;
+    position: fixed;
+    height: 83px;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    background: var(--Color---white, #fff);
+  }
+}

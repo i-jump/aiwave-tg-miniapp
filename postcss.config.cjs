@@ -1,0 +1,43 @@
+module.exports = {
+  plugins: {
+    autoprefixer: {
+      overrideBrowserslist: [
+        "Android 4.1",
+        "iOS 7.1",
+        "Chrome > 31",
+        "ff > 31",
+        "ie >= 8",
+      ],
+    },
+    "postcss-px-to-viewport-update": {
+      unitToConvert: "px",
+      viewportWidth: 375,
+      unitPrecision: 6,
+      propList: ["*"],
+      include: [/\/src\/pages\/mobile\//, /\/src\/components\/mobile\//],
+      // exclude: [/node_modules\/ant-design-vue/],
+      viewportUnit: "vw",
+      fontViewportUnit: "vw",
+      selectorBlackList: [],
+      minPixelValue: 1,
+      mediaQuery: true,
+      replace: true,
+      landscape: false,
+    },
+    "postcss-px-to-viewport": {
+      unitToConvert: "px",
+      viewportWidth: 390,
+      unitPrecision: 6,
+      propList: ["*"],
+      include: [/\/src\/pages\/telegram\//, /\/src\/components\/telegram\//],
+      // exclude: [/node_modules\/ant-design-vue/],
+      viewportUnit: "vw",
+      fontViewportUnit: "vw",
+      selectorBlackList: [],
+      minPixelValue: 1,
+      mediaQuery: true,
+      replace: true,
+      landscape: false,
+    },
+  },
+};

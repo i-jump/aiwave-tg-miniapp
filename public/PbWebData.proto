@@ -1,0 +1,45 @@
+syntax ="proto3"; //版本
+// 生成类的包名
+option java_outer_classname = "PbWebDataType"; //生成的外部类名，同时也是文件名
+
+enum ActionType {
+     HEARTBEAT = 0;
+     VOICE = 1;
+     CONTENT = 2;
+}
+
+//protobuf 的对象声明
+message PbWebData {
+     int64 frameId = 1;//帧id
+     repeated PBWebFrame frame= 2;//帧同步
+
+}
+
+//protobuf 帧同步
+message PBWebFrame {
+     ActionType type = 1; //type=0 心跳检测 1语音流
+     int64 userId = 2; //用户id
+     PBWebVoice voice = 3;  //语音流
+     PBWebContent content = 4;  //web端发送内容
+}
+
+//protobuf 语音流
+message PBWebVoice {
+     int64 userId = 1;//用户id
+     bytes voiceBytes = 2;//语音流
+     string voiceStr = 3;//语音文本
+     int64 sort = 4;//顺序
+}
+
+//protobuf 对话内容
+message PBWebContent {
+     int64 userId = 1;//用户id
+     int64 chatUserId = 2;//对话的用户id
+     string voiceStr = 3;//输入文本
+}
+
+
+
+
+
+
